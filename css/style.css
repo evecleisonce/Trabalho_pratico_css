@@ -1,0 +1,188 @@
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  
+/* Estilos para a DIV 1 */
+#div1 {
+    display: none;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+    background-color: #333;
+}
+  
+  
+#div1 .logo {
+    display: flex;
+    align-items: center;
+ }
+  
+#div1 .logo img {
+    height: 150px;
+}
+  
+#div1 .info h1 {
+    font-size: 24px;
+    margin: 0;
+    color: white;
+}
+  
+#div1 .info p {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+    color: white;
+}
+  
+#div1-1 {
+    display: none;
+}
+  
+#div1-1 {
+    align-items: center;
+    height: 50px;
+    color: #fff;
+}
+  
+#div1-1 .language {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+#div1-1 .language button {
+    margin-left: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+  
+#div1-1 .links {
+    white-space: nowrap;
+    overflow: visible;
+    margin-right: 0;
+}
+  
+#div1-1 .links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+  
+#div1-1 .links a:last-child {
+    margin-right: 0;
+}
+
+@media (orientation: landscape) {
+    #div1-1 {
+        display: block;
+    }
+}
+
+/*regra para celulares*/
+@media (max-width:778px) {
+    #div1 {
+      display: flex;
+    }
+  
+    #div1-1 {
+      display: none;
+    } 
+}
+
+/*Regra para desktops*/
+@media (min-width: 768px) and (max-width: 1279px) {
+    #div1 {
+      display: flex;
+    }
+}
+  
+/* Regra para TVs */
+@media (min-width: 1280px) {
+    #div1 {
+      display: flex;
+    }
+}
+
+#div2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    background-color: #801010;
+    color: #fff;
+}
+
+#div2 ul {
+    display: flex;
+    align-items: center;
+    list-style: none; /* Remove o estilo padrÃ£o da lista */
+    padding-left: 10px;
+}
+  
+#div2 ul li {
+    padding-right: 10px;
+}
+  
+#div2 ul li a {
+    color: #fff; /* Define a cor do texto dos links como branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+  
+#div2 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+#div2 input {
+    margin-right: 10px;
+    border-radius: 10px;
+    outline: none;
+    padding: 3px;
+ }
+  
+#div2 button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Para dispositivos com largura menor ou igual a 768px (tamanho de tela de um celular em retrato) */
+@media (max-width: 768px) {
+    #div2 {
+        display: flex;
+        align-items: center;
+        height: auto;
+        background-color: #801010;
+        padding: 10px;
+    }
+  
+    #div2 ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    #div2 form {
+      display: block;
+      padding: 10px;
+      width: 100%; /* Adiciona 100% de largura para preencher a largura do pai */
+    }
+  
+    #div2 input[type="text"], #div2 button {
+      display: block;
+      width: 100%; /* Adiciona 100% de largura para preencher a largura do pai */
+    }
+}
